@@ -61,7 +61,7 @@
 		  requestAnimationFrame(animate);
 		  cursor.lazyX = lerp(cursor.lazyX, cursor.x, cursor.lazySpeed);
 		  cursor.lazyY = lerp(cursor.lazyY, cursor.y, cursor.lazySpeed);
-		  cursor.lazyHighlightScale = lerp(cursor.lazyHighlightScale, cursor.highlightScale, 0.1);
+		  cursor.lazyHighlightScale = lerp(cursor.lazyHighlightScale, cursor.highlightScale, 0.5);
 		  wrapperElement.style.setProperty("--cursorX", `${cursor.x}px`);
 		  wrapperElement.style.setProperty("--cursorY", `${cursor.y}px`);
 		  wrapperElement.style.setProperty("--lazyCursorX", `${cursor.lazyX}px`);
@@ -101,6 +101,21 @@
 	        [0, 1],
 	        [700, 2],
 	        [960, 3]
+	     ],
+        navigationText: false
+    });
+
+	$("#owl-slider-skills").owlCarousel({
+		loop:true,
+        navigation: false,
+        pagination: true,
+		autoPlay: 1000,
+		slideSpeed: 500,
+		stopOnHover: true,
+        itemsCustom : [
+	        [0, 2],
+	        [700, 4],
+	        [960, 6]
 	     ],
         navigationText: false
     });

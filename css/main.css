@@ -1015,6 +1015,13 @@
  .skill-bars li .percent90  { width: 90%; }
  .skill-bars li .percent95  { width: 95%; }
  .skill-bars li .percent100 { width: 100%; }
+
+ .item-skill img {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(1);
+}
  
  
  /** 
@@ -1403,6 +1410,7 @@
 	 display: block;
 	 position: absolute;
 	 width: 100%;
+	 text-align: center;
 	 left: 0;
 	 bottom: 7.2rem;
 	 font-size: 3.3rem;
@@ -2613,7 +2621,7 @@
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	background: radial-gradient(circle at var(--lazyCursorX, 0) var(--lazyCursorY, 0), #0008 calc(5rem * var(--cursorHighlightScale, 0)), #000 calc(20rem * var(--cursorHighlightScale, 0))) 0 0/100% 100%, radial-gradient(circle, var(--green-primary), black 0.07rem) 0 0/0.5rem 0.5rem;
+	background: radial-gradient(circle at var(--lazyCursorX, 0) var(--lazyCursorY, 0), #0008 calc(5rem * var(--cursorHighlightScale, 0)), #000 calc(20rem * var(--cursorHighlightScale, 0))) 0 0/100% 100%, radial-gradient(circle, var(--green-primary), black 0.2rem) 0 0/0.5rem 0.5rem;
   }
   
   #cursor {
