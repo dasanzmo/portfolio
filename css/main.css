@@ -75,10 +75,11 @@
 	 font-size: 1.7rem;
 	 line-height: 3rem;
 	 color: #6e6e6e;
+	 overflow-x: hidden;
  }
  
  :root{
-	 --green-primary: #CBFE00;
+	 --green-primary: #6771f6;
  }
  
  /**
@@ -1058,6 +1059,13 @@
 	 margin-bottom: 0.3rem;
 	 letter-spacing: .4rem;
  }
+
+
+
+ img.img-intro {
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, #000000 50%);
+    mask-image: linear-gradient(to top, transparent 15%, #000000 50%);
+}
  
  /**
   * responsive:
@@ -2120,7 +2128,7 @@
 	 left: 0;
 	 width: 100%;
 	 height: 100%;
-	 background: #151515;
+	 background: #15151573;
 	 opacity: .9;
  }
  

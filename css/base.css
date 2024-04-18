@@ -427,6 +427,12 @@ textarea {
 	padding: 0 20px;
 }
 
+#intro [class*="col-"] {
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .col-one {
 	width: 8.33333%;
 }
